@@ -65,19 +65,30 @@
 	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
 	  <tbody>
 	    <tr>
-	      <td style="padding:20px;width:25%;vertical-align:top; text-align:right;">
-	        <div class="one">
-	          <div class="two" id='nuvo_image'>
-<!-- 	            <video width="100%" muted autoplay loop> -->
-		    <video style="display:block; margin: 0;" width="100%" muted autoplay loop>
-	              <source src="images/blindways.mp4" type="video/mp4">
-	              Your browser does not support the video tag.
-	            </video>
-	          </div>
+
+
+              <td style="padding:20px;width:25%;vertical-align:top; text-align:right;">
+                <div class="one">
+                  <div class="two" id='nuvo_image'><video  width=100% muted autoplay loop>
+                  <source src="images/blindways.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+		</div>
 	          <!-- <img src='images/MDN_teaser.jpg' width=100%>  -->
 	          <!-- <img src='images/mdn_arch.jpg' width=100%> -->
-	        </div>
-	      </td>
+                </div>
+                <script type="text/javascript">
+                  function nuvo_start() {
+                    document.getElementById('nuvo_image').style.opacity = "1";
+                  }
+        
+                  function nuvo_stop() {
+                    document.getElementById('nuvo_image').style.opacity = "0";
+                  }
+                  nuvo_stop()
+                </script>
+              </td>
+
 	      <td style="padding:20px;width:75%;vertical-align:top; text-align:left;">
 	        <a href="https://blindways.github.io/">
 	          <span class="papertitle">Text to Blind Motion</span>
